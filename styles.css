@@ -1,0 +1,28 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content button{
+    background-color: slateblue;
+    padding: 20px;
+    border:none;
+    border-radius: 20px;
+    font-size: 18px;
+    margin-top: 60px;
+    cursor: pointer;
+    color: aliceblue;
+    transition: all 0.3s ease;
+}
+
+.content button:hover{
+    background-color: rgb(92, 78, 180);
+}
+
+.content button:active{
+    background-color: rgb(70, 59, 141);
+    transform: translateY(5px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
