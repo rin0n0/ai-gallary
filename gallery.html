@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <h1 id="gallery-title">Моя галерея</h1>
+        
+        <div class="slider">
+            <div class="slide active">
+                <img id="slide-1" src="" alt="Сгенерированное изображение 1">
+            </div>
+            <div class="slide">
+                <img id="slide-2" src="" alt="Сгенерированное изображение 2">
+            </div>
+            <div class="slide">
+                <img id="slide-3" src="" alt="Сгенерированное изображение 3">
+            </div>
+            
+            <button class="prev" onclick="changeSlide(-1)">❮</button>
+            <button class="next" onclick="changeSlide(1)">❯</button>
+            
+            <div class="dots">
+                <span class="dot active" onclick="goToSlide(0)"></span>
+                <span class="dot" onclick="goToSlide(1)"></span>
+                <span class="dot" onclick="goToSlide(2)"></span>
+            </div>
+        </div>
+        
+        <button class="back-btn" onclick="window.location.href='index.html'">Создать новую галерею</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
