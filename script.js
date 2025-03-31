@@ -14,12 +14,10 @@ if (generateBtn) {
 
         generateBtn.disabled = true;
         statusElement.textContent = 'Генерация изображений...';
-
-        try {
-            const images = [];
-            const image = await generateImage(prompt + i);
+        const images = [];
+        try {         
             for (let i = 0; i < 3; i++) {
-                
+                const image = await generateImage(prompt+i);
                 images.push(image);
             }
 
