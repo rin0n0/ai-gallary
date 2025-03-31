@@ -27,7 +27,7 @@ if (generateBtn) {
             localStorage.setItem('galleryTitle', prompt);
 
 
-            window.open('gallery.html');
+            window.location.href='gallery.html';
 
         } catch (error) {
             console.error('Ошибка:', error);
